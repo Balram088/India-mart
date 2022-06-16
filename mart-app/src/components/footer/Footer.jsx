@@ -1,8 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import LiveHelpIcon from "@mui/icons-material/LiveHelp";
-import LocalPostOfficeIcon from "@mui/icons-material/LocalPostOffice";
 import style from "styled-components";
 
  const Footerwrraper = style.div`

@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { Search2Icon } from '@chakra-ui/icons'
 import styled from "styled-components";
-import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import  LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
 import DeviceThermostatOutlinedIcon from '@mui/icons-material/DeviceThermostatOutlined';
 import StoreMallDirectoryOutlinedIcon from '@mui/icons-material/StoreMallDirectoryOutlined';

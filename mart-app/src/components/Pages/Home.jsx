@@ -5,6 +5,7 @@ import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 import Marquee from "react-fast-marquee";
 import { Link } from 'react-router-dom';
 import proPic from  './About/m.png';
+import { Grid, GridItem } from '@chakra-ui/react'
 
 
 const Homewrraper = styled.div`
@@ -63,6 +64,12 @@ const Homewrraper = styled.div`
 .about div img{
     height:250px;
     width:100%;
+}
+.pro_box{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.pro_box:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 `
@@ -132,6 +139,15 @@ const Home = () => {
             <div>
                 <img src={proPic} alt="" />
              </div>
+             <Grid templateColumns='repeat(3, 1fr)' gap={6}>
+                 <div> <img src="https://4.imimg.com/data4/CE/VE/GLADMIN-184994/forever-aloe-vera-gel-250x250.jpg" alt="" /> </div>
+                 <div> <img src="https://4.imimg.com/data4/CE/VE/GLADMIN-184994/forever-aloe-vera-gel-250x250.jpg" alt="" /> </div>
+                 <div> <img src="https://4.imimg.com/data4/CE/VE/GLADMIN-184994/forever-aloe-vera-gel-250x250.jpg" alt="" /> </div>
+               
+        
+             </Grid>
+  
+            
           
          
      </div>  
