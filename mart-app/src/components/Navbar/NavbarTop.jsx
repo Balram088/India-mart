@@ -30,6 +30,7 @@ nav{
   width: 100%;
   background: #2e3192;
   margin:auto;
+  border:solid 1px green ;
 }
 nav .wrapper{
   position: relative;

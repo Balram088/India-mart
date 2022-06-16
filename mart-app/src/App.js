@@ -1,11 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import NavbarSecond, { NavbarSecound } from './components/Navbar/NavbarSecound';
+import NavbarTop from './components/Navbar/NavbarTop';
+import Mainroutes from './components/Mainroutes';
 
 function App() {
   return (
     <div className="App">
-      
-      hello summu
+        <NavbarTop/>
+        <NavbarSecond/> 
+         <Mainroutes/>
     </div>
   );
 }

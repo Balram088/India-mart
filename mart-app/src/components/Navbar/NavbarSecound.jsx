@@ -11,30 +11,33 @@ import InitialFocus from './Modal';
 import styled from "styled-components";
 
 const Wrape = styled.div`
-margin:20px;
+
 *{
     
-  margin: 0;
+ 
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+
 }
 nav{
     position:fixed;
    z-index: 99;
    width: 100%;
    margin-top:5%;
-  
+   margin-bottom:50px;
+
   
 }
 nav .wrapper{
   position: fixed;
-  max-width: 1300px;
+  width:100%;
   padding: 0 30px;
-  margin:auto;
+  border:solid 1px red ;
+
   height: 50px;
   line-height: 70px;
- 
+ margin:auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,7 +50,7 @@ nav .wrapper{
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  margin-right:400px;
+  margin-right:100px;
   
 }
 .wrapper .nav-links{
@@ -110,6 +113,7 @@ li{
   top: 85px;
   opacity: 0;
   visibility: hidden;
+  margin-top:0px;
 }
 .mega-box .content{
   background: white;
@@ -123,32 +127,30 @@ li{
   width: calc(25% - 30px);
   line-height: 45px;
 }
-.content .row img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 .content .row header{
-  color: Black;
-  font-size: 16px;
+  color: Blue;
+  margin-top:-15px;
+  font-size: 14px;
   font-weight: 600;
+
 }
 .content .row .mega-links{
-  margin-left: -40px;
-  border-left: 1px solid rgba(255,255,255,0.09);
+ border-left: 1px solid rgba(255,255,255,0.09);
 }
 .row .mega-links li{
   padding: 0 20px;
 }
 .row .mega-links li a{
-  padding: 0px;
-  padding: 0 20px;
+   margin-top:-15px;
+  padding: 0 10px;
   color: black;
-  font-size: 17px;
+  font-size: 12px;
   display: block;
 }
 .row .mega-links li a:hover{
   color: blue;
+  background-color:white;
   text-decoration: underline;
 }
 .wrapper .btn{
@@ -230,7 +232,7 @@ li{
   }
   .nav-links .mobile-item{
     display: block;
-    color: #f2f2f2;
+    color: black;
     font-size: 20px;
     font-weight: 500;
     padding-left: 20px;
@@ -339,101 +341,76 @@ export const NavbarSecond = () => {
 
 
 
-        <li>  <Link class="desktop-item" to="/men">Home</Link> 
+        <li>  <Link class="desktop-item" to="/men">Home</Link></li>
+
+        <li>  <Link class="desktop-item" to="/girls">Products & services</Link> 
           <label for="showMega" class="mobile-item"></label>
           <div class="mega-box">
             <div class="content">
             
               <div class="row">
-                <header>Verieties of Men Dresses</header>
+                <header>Makeup</header>
                 <ul class="mega-links">
-                  <li><Link class="desktop-item" to="/shirt">Shirts</Link></li>
-                  <li><Link class="desktop-item" to="/pent">Pents</Link></li>
-                  <li><Link class="desktop-item" to="/indian-wear">Indian Wear</Link></li>
-                  <li><Link class="desktop-item" to="/accessories">Accessories</Link></li>
-                  <li><Link class="desktop-item" to="/winterwear">Winterwear</Link></li>
+                  <li><Link class="desktop-item" to="/foundation">Foundation</Link></li>
+                  <li><Link class="desktop-item" to="/pan-cake">Pan Cake Beauty</Link></li>
+                  <li><Link class="desktop-item" to="/compact-powder">Compact Powder</Link></li>
+                  <li><Link class="desktop-item" to="pan-stick">Pan Stick Beauty </Link></li>
                   <li><Link class="desktop-item" to="/more">More</Link></li>
 
                 </ul>
               </div>
               <div class="row">
-                <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Mens-Ethnicwear-Desktop1-05Nov2019.jpg" alt="" />
-              </div>
-              <div class="row">
-               <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Mens-Tops-Desktop2-19May2021.jpg" alt="" />
-              </div>
-              <div class="row">
-               <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Mens-Bottoms-Desktop3-05Nov2019.jpg " alt="" />
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li>  <Link class="desktop-item" to="/girls">Girls</Link> 
-          <label for="showMega" class="mobile-item"></label>
-          <div class="mega-box">
-            <div class="content">
-            
-              <div class="row">
-                <header>Verieties of Girls Dresses</header>
+                <header>For Eyes</header>
                 <ul class="mega-links">
-                  <li><Link class="desktop-item" to="/tops">Tops</Link></li>
-                  <li><Link class="desktop-item" to="/bottoms">Bottoms</Link></li>
-                  <li><Link class="desktop-item" to="/indian-wear">Indian Wear</Link></li>
-                  <li><Link class="desktop-item" to="/accessories">Accessories</Link></li>
-                  <li><Link class="desktop-item" to="/winterwear">Winterwear</Link></li>
+                  <li><Link class="desktop-item" to="/mascra">Mascara</Link></li>
+                  <li><Link class="desktop-item" to="/eye-shadow">Eye Shadow</Link></li>
+                  <li><Link class="desktop-item" to="/eye-liner">Eye Liner</Link></li>
+                  <li><Link class="desktop-item" to="/eye-liner">Eye Cleaner</Link></li>
                   <li><Link class="desktop-item" to="/more">More</Link></li>
 
                 </ul>
               </div>
               <div class="row">
-                <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Girls-Tops-Desktop1-05Nov2019.jpg" alt="" />
-              </div>
-              <div class="row">
-                <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Girls-Tops-Desktop2-05Nov2019.jpg" alt="" />
-              </div>
-              <div class="row">
-                 <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Girls-OE-Desktop1-05May22.jpg" alt="" />
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li>  <Link class="desktop-item" to="/boys">Boys</Link> 
-          <label for="showMega" class="mobile-item"></label>
-          <div class="mega-box">
-            <div class="content">
-            
-              <div class="row">
-                <header>Verieties of Boys Dresses</header>
+                <header>Traditional Items</header>
                 <ul class="mega-links">
-                  <li><Link class="desktop-item" to="/shirt">Shirts</Link></li>
-                  <li><Link class="desktop-item" to="/pent">Pents</Link></li>
-                  <li><Link class="desktop-item" to="/indian-wear">Indian Wear</Link></li>
-                  <li><Link class="desktop-item" to="/accessories">Accessories</Link></li>
-                  <li><Link class="desktop-item" to="/winterwear">Winterwear</Link></li>
+                  <li><Link class="desktop-item" to="/sindoor">Sindoor</Link></li>
+                  <li><Link class="desktop-item" to="/kajal">Kajal Eye Cosmetic</Link></li>
+                   <li><Link class="desktop-item" to="/kajal">Kajal </Link></li>
+                   <li><Link class="desktop-item" to="/sindoor">Sindoor</Link></li>
                   <li><Link class="desktop-item" to="/more">More</Link></li>
 
                 </ul>
               </div>
               <div class="row">
-              <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Boys-OE-Desktop1-05May2022.jpg" alt="" />
+                <header>Lips</header>
+                <ul class="mega-links">
+                  <li><Link class="desktop-item" to="/lipStick">Lip Stick</Link></li>
+                  <li><Link class="desktop-item" to="/lip-liner">Lip Liner</Link></li>
+                  <li><Link class="desktop-item" to="/lip-gloss">Lip Gloss</Link></li>
+                  <li><Link class="desktop-item" to="/lipStick">Lip Brush</Link></li>
+                  <li><Link class="desktop-item" to="/more">More</Link></li>
+
+                </ul>
               </div>
               <div class="row">
-                 <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Boys-BabyBoy-Desktop4-04Mar2022.jpg" alt="" />
-              </div>
-              <div class="row">
-                <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Boys-Shoes-Desktop1-05Nov2019.jpg" alt="" />
+                <header>LipCare</header>
+                <ul class="mega-links">
+                  <li><Link class="desktop-item" to="/lip-balm">Lip Balm</Link></li>
+                  <li><Link class="desktop-item" to="/lip-gaurd">Lip Gaurd</Link></li>
+                  <li><Link class="desktop-item" to="/lip-liner">Lip Liner</Link></li>
+                  <li><Link class="desktop-item" to="/lip-gloss">Lip Gloss</Link></li>
+                  <li><Link class="desktop-item" to="/more">More</Link></li>
+
+                </ul>
               </div>
             </div>
+          
           </div>
         </li>
 
-
+        <li>  <Link class="desktop-item" to="/about-us">About Us</Link> </li>
+        <li>  <Link class="desktop-item" to="/contact-us">Contact Us</Link> </li>
  
-            <li><Link to="/signup"></Link>  </li>
-            
             <li class="mail_button"><LocalPhoneOutlinedIcon/>9876543210</li>
             <li class="mail_button"><InitialFocus/> </li>
       </ul>

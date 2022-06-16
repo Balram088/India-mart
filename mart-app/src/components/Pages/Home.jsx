@@ -1,10 +1,21 @@
 import React from 'react'
-import InitialFocus from '../Navbar/Modal'
+import styled from "styled-components";
+
+const Homewrraper = styled.div`
+.main{
+    margin:px;
+    border:solid 4px pink ;
+}
+`
 const Home = () => {
   return (
-    <div>
-    <InitialFocus/>
-    </div>
+    <>
+        <Homewrraper>
+         <div class="main">
+         <h1>Blue Heaven Cosmetics Private Limited </h1>
+         </div>
+        </Homewrraper>
+    </>
   )
 }
 
