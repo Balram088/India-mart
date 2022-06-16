@@ -1,15 +1,13 @@
-import React, { useState, useContext } from 'react';
-// import { IoIosArrowDropupCircle } from 'react-icons/io';
-import KeyboardControlKeyIcon from '@mui/icons-material/KeyboardControlKey';
-// import { makeStyles } from '@material-ui/core/styles';
+import React, { useState} from 'react';
 
-// import { ThemeContext } from '../../contexts/ThemeContext';
+import KeyboardControlKeyIcon from '@mui/icons-material/KeyboardControlKey';
+
 import './BackToTop.css';
 
 function BackToTop() {
     const [visible, setVisible] = useState(false);
 
-    // const { theme } = useContext(ThemeContext);
+   
 
     const toggleVisible = () => {
         const scrolled = document.documentElement.scrollTop;
@@ -28,15 +26,6 @@ function BackToTop() {
     };
 
     window.addEventListener('scroll', toggleVisible);
-
-    // const useStyles = makeStyles(() => ({
-    //     icon: {
-    //         fontSize: '3rem',
-    //         color: theme.tertiary,
-    //     },
-    // }));
-
-    // const classes = useStyles();
 
     return (
         <div

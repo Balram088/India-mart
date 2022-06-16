@@ -3,6 +3,7 @@ import NavbarSecond, { NavbarSecound } from './components/Navbar/NavbarSecound';
 import NavbarTop from './components/Navbar/NavbarTop';
 import Mainroutes from './components/Mainroutes';
 import BackToTop from './components/BackToTop/BackToTop';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <br/>
          <Mainroutes/>
          <BackToTop/>
+         <Footer/>
     </div>
   );
 }

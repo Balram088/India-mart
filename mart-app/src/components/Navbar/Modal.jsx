@@ -1,4 +1,4 @@
-import { FormControl, FormLabel, Input, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from "@chakra-ui/react";
+import { FormControl, FormLabel, Input, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay,  useDisclosure } from "@chakra-ui/react";
 import { Button, Modal } from "@chakra-ui/react";
 import React from "react";
 import MailOutlineOutlined from "@mui/icons-material/MailOutlineOutlined";

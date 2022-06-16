@@ -26,6 +26,7 @@ nav{
    width: 100%;
    margin-top:5%;
    margin-bottom:50px;
+   
 
   
 }
@@ -33,11 +34,10 @@ nav .wrapper{
   position: fixed;
   width:100%;
   padding: 0 30px;
- 
-
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   height: 50px;
   line-height: 70px;
- margin:auto;
+   margin:auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -113,7 +113,7 @@ li{
   top: 85px;
   opacity: 0;
   visibility: hidden;
-  margin-top:0px;
+  margin-top:-20px;
 }
 .mega-box .content{
   background: white;
@@ -336,14 +336,8 @@ export const NavbarSecond = () => {
       {/* <input type="radio" name="slider" id="menu-btn"/> */}
       {/* <input type="radio" name="slider" id="close-btn"/> */}
       <ul class="nav-links">
- 
-         
-
-
-
-        <li>  <Link class="desktop-item" to="/men">Home</Link></li>
-
-        <li>  <Link class="desktop-item" to="/girls">Products & services</Link> 
+      <li>  <Link class="desktop-item" to="/men">Home</Link></li>
+      <li>  <Link class="desktop-item" to="/girls">Products & services</Link> 
           <label for="showMega" class="mobile-item"></label>
           <div class="mega-box">
             <div class="content">
@@ -356,7 +350,6 @@ export const NavbarSecond = () => {
                   <li><Link class="desktop-item" to="/compact-powder">Compact Powder</Link></li>
                   <li><Link class="desktop-item" to="pan-stick">Pan Stick Beauty </Link></li>
                   <li><Link class="desktop-item" to="/more">More</Link></li>
-
                 </ul>
               </div>
               <div class="row">

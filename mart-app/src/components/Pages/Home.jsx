@@ -4,6 +4,8 @@ import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 import Marquee from "react-fast-marquee";
 import { Link } from 'react-router-dom';
+import proPic from  './About/m.png';
+
 
 const Homewrraper = styled.div`
 .main{
@@ -25,23 +27,23 @@ const Homewrraper = styled.div`
     height:220px;
     width:220px;
     border-right:solid 1px #eaeaea;
+    cursor:pointer;
 }
 .pro_name{
     color:white;
     width:220px;
     height:60px;
-    padding:20px;
+    padding:10px;
     background-color:#505050 ;
     text-align:center;
     font-weight:600;
     border-right:solid 1px #eaeaea;
     font-size:22px;
+    cursor:pointer;
 }
 .pro_name:hover{
-    
-   height:100px;
-   position:fixd;
-   padding:30px;
+    background-color:white;
+    color:#2e3192;
 }
 .about h1{
     text-align:center;
@@ -58,6 +60,11 @@ const Homewrraper = styled.div`
     margin:10px 110px 10px 110px ;
     text-align:center;
 }
+.about div img{
+    height:250px;
+    width:100%;
+}
+
 `
 const Home = () => {
   return (
@@ -121,6 +128,11 @@ const Home = () => {
           <br />
           <Link to="" >+Read More...</Link>
          </p>
+        
+            <div>
+                <img src={proPic} alt="" />
+             </div>
+          
          
      </div>  
    
