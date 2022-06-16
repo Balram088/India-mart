@@ -5,9 +5,10 @@ import Mainroutes from './components/Mainroutes';
 
 function App() {
   return (
-    <div className="App">
+    <div>
         <NavbarTop/>
         <NavbarSecond/> 
+        <br/>
          <Mainroutes/>
     </div>
   );

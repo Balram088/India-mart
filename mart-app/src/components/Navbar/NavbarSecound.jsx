@@ -33,7 +33,7 @@ nav .wrapper{
   position: fixed;
   width:100%;
   padding: 0 30px;
-  border:solid 1px red ;
+ 
 
   height: 50px;
   line-height: 70px;
