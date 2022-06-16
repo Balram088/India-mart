@@ -1,9 +1,11 @@
 import React from 'react';
-import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
 import { Link } from "react-router-dom";
 import { Search2Icon } from '@chakra-ui/icons'
 import styled from "styled-components";
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
+import  LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
+import DeviceThermostatOutlinedIcon from '@mui/icons-material/DeviceThermostatOutlined';
+import StoreMallDirectoryOutlinedIcon from '@mui/icons-material/StoreMallDirectoryOutlined';
 
 
 const Wrap = styled.div`
@@ -52,7 +54,7 @@ nav .wrapper{
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px 20px;
+  padding: 10px;
   border-radius: 5px;
   transition: all 0.3s ease;
 }
@@ -83,7 +85,7 @@ nav .wrapper{
   visibility: visible;
 }
 .drop-menu li a{
-  width: 100%;
+  width: 10%;
   display: block;
   padding: 0 0 0 0px;
   font-weight: 400;
@@ -91,7 +93,7 @@ nav .wrapper{
 }
 .mega-box{
   position: absolute;
-  width: 50%;
+  width: 100%;
   padding: 0 0px;
   margin-right:auto;
   top: 85px;
@@ -189,10 +191,10 @@ nav .wrapper{
     display: block;
   }
   .nav-links li{
-    margin: 15px 10px;
+   
   }
   .nav-links li a{
-    padding: 0 20px;
+  
     display: block;
     font-size: 20px;
   }
@@ -218,9 +220,9 @@ nav .wrapper{
   .nav-links .mobile-item{
     display: block;
     color: #f2f2f2;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    padding-left: 20px;
+    padding: 0px;
     cursor: pointer;
     border-radius: 5px;
     transition: all 0.3s ease;
@@ -233,14 +235,15 @@ nav .wrapper{
   }
   .drop-menu li a{
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 1px;
   }
   .mega-box{
-    position: static;
+    position: relative;
+    display:flex;
     top: 65px;
     opacity: 1;
     visibility: visible;
-    padding: 0 20px;
+    padding: 0 0px;
     max-height: 0px;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -248,10 +251,11 @@ nav .wrapper{
   .mega-box .content{
     box-shadow: none;
     flex-direction: column;
-     padding: 20px 20px 0 20px;
+     padding: 0px 0px 0 0px;
   }
   .mega-box .content .row{
-    width: 100%;
+    width: 10%;
+    display:flex;
     margin-bottom: 15px;
     border-top: 1px solid rgba(255,255,255,0.08);
   }
@@ -261,13 +265,13 @@ nav .wrapper{
   }
   .content .row .mega-links{
     border-left: 0px;
-    padding-left: 15px;
+    padding: 5px;
   }
   .row .mega-links li{
     margin: 0;
   }
   .content .row header{
-    font-size: 19px;
+    font-size: 20px;
   }
 }
 input{
@@ -312,7 +316,7 @@ textarea:focus, input:focus{
 
 
 
-export const NavbarSecond = () => {
+export const NavbarTop= () => {
   // const { token } = useContext(AuthContext);
   // use token to chnage the text from Login to Logout once logged in successfully
  
@@ -323,121 +327,53 @@ export const NavbarSecond = () => {
   <nav>
     <div class="wrapper">
     <div class="logo">
-    <Link  to="/home"><img style={{ }} src="https://image.pitchbook.com/60E3UZ8tZwClLtS11gSFs5NuIvH1613653472766_200x200" alt="logo"  /></Link>
+    <Link  to="/home"><img src="https://image.pitchbook.com/60E3UZ8tZwClLtS11gSFs5NuIvH1613653472766_200x200" alt="logo"  /></Link>
     </div>
     
     <div>
        <span class="location">All India  </span> <input type="text"  placeholder='What are you looking for?' />
-       <label class="search_icon"> <Search2Icon/></label>
+          <label class="search_icon">    <Search2Icon/></label>
     </div>
 
       {/* <input type="radio" name="slider" id="menu-btn"/> */}
       {/* <input type="radio" name="slider" id="close-btn"/> */}
       <ul class="nav-links">
           
-          <li><Link class="desktop-item" to="/shopping">Shopping<ShoppingBagOutlinedIcon/></Link></li>
+          <li><Link class="desktop-item" to="/shopping">Shopping<LocalOfferOutlinedIcon/></Link></li>
           
 
 
 
-        <li>  <Link class="desktop-item" to="/men">Men</Link> 
+        <li>  <Link class="desktop-item" to="/men">Covid Supplies <DeviceThermostatOutlinedIcon/></Link> 
         
-          <label for="showMega" class="mobile-item"></label>
           <div class="mega-box">
             <div class="content">
             
               <div class="row">
-                <header>Verieties of Men Dresses</header>
+                
                 <ul class="mega-links">
-                  <li><Link class="desktop-item" to="/pent">Oxygen Supplies</Link></li>
-                  <li><Link class="desktop-item" to="/indian-wear">Medicines</Link></li>
-                  <li><Link class="desktop-item" to="/accessories">Safety Essentials</Link></li>
-                  <li><Link class="desktop-item" to="/winterwear">Medical Supplies and Equipments</Link></li>
-                  <li><Link class="desktop-item" to="/more">View All</Link></li>
+                <header>Medical Equipments</header>
+                  <li><Link class="desktop-item" to="/Supplies">Oxygen Supplies</Link></li>
+                  <li><Link class="desktop-item" to="/Supplies">Medicines</Link></li>
+                  <li><Link class="desktop-item" to="/Supplies">Safety Essentials</Link></li>
+                  <li><Link class="desktop-item" to="/Suppliesr">Medical Supplies and Equipments</Link></li>
+                  <li><Link class="desktop-item" to="/Supplies">View All</Link></li>
 
                 </ul>
               </div>
-              <div class="row">
-                <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Mens-Ethnicwear-Desktop1-05Nov2019.jpg" alt="" />
-              </div>
-              <div class="row">
-               <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Mens-Tops-Desktop2-19May2021.jpg" alt="" />
-              </div>
-              <div class="row">
-               <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Mens-Bottoms-Desktop3-05Nov2019.jpg " alt="" />
-              </div>
+              
             </div>
           </div>
         </li>
        
 
-        <li>  <Link class="desktop-item" to="/girls">Girls</Link> 
-          <label for="showMega" class="mobile-item"></label>
-          <div class="mega-box">
-            <div class="content">
-            
-              <div class="row">
-                <header>Verieties of Girls Dresses</header>
-                <ul class="mega-links">
-                  <li><Link class="desktop-item" to="/tops">Tops</Link></li>
-                  <li><Link class="desktop-item" to="/bottoms">Bottoms</Link></li>
-                  <li><Link class="desktop-item" to="/indian-wear">Indian Wear</Link></li>
-                  <li><Link class="desktop-item" to="/accessories">Accessories</Link></li>
-                  <li><Link class="desktop-item" to="/winterwear">Winterwear</Link></li>
-                  <li><Link class="desktop-item" to="/more">More</Link></li>
-
-                </ul>
-              </div>
-              <div class="row">
-                <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Girls-Tops-Desktop1-05Nov2019.jpg" alt="" />
-              </div>
-              <div class="row">
-                <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Girls-Tops-Desktop2-05Nov2019.jpg" alt="" />
-              </div>
-              <div class="row">
-                 <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Girls-OE-Desktop1-05May22.jpg" alt="" />
-              </div>
-
-            </div>
-          </div>
-        </li>
-
-        <li>  <Link class="desktop-item" to="/boys">Boys</Link> 
-          <label for="showMega" class="mobile-item"></label>
-          <div class="mega-box">
-            <div class="content">
-            
-              <div class="row">
-                <header>Verieties of Boys Dresses</header>
-                <ul class="mega-links">
-                  <li><Link class="desktop-item" to="/shirt">Shirts</Link></li>
-                  <li><Link class="desktop-item" to="/pent">Pents</Link></li>
-                  <li><Link class="desktop-item" to="/indian-wear">Indian Wear</Link></li>
-                  <li><Link class="desktop-item" to="/accessories">Accessories</Link></li>
-                  <li><Link class="desktop-item" to="/winterwear">Winterwear</Link></li>
-                  <li><Link class="desktop-item" to="/more">More</Link></li>
-
-                </ul>
-              </div>
-              <div class="row">
-              <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Boys-OE-Desktop1-05May2022.jpg" alt="" />
-              </div>
-              <div class="row">
-                 <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Boys-BabyBoy-Desktop4-04Mar2022.jpg" alt="" />
-              </div>
-              <div class="row">
-                <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Boys-Shoes-Desktop1-05Nov2019.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </li>
-
-            {/* <label ><SearchOutlinedIcon/></label> */}
- 
-            {/* <li><Link to="/signup">Sign Up</Link>  </li>
-            <li><Link to="/signin">Sign In</Link></li>
-            <label htmlFor=""><LocalMallRoundedIcon/></label>
-            <li><Link to="/basket">|  Basket  </Link></li>   */}
+        <li>  <Link class="desktop-item" to="/sell">Sell<StoreMallDirectoryOutlinedIcon/> </Link> 
+         
+         </li>
+             
+        <li>  <Link class="desktop-item" to="/login">Login</Link></li>
+       
+          
             
       </ul>
       <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
@@ -449,4 +385,4 @@ export const NavbarSecond = () => {
   }
 
 
-export default NavbarSecond
+export default NavbarTop

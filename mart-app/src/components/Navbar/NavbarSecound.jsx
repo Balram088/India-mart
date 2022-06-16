@@ -1,46 +1,64 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-// import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
- import LocalMallRoundedIcon from '@mui/icons-material/LocalMallRounded';
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import LocalMallRoundedIcon from '@mui/icons-material/LocalMallRounded';
+import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
+import InitialFocus from './Modal';
+
+
+
 
 import styled from "styled-components";
 
-
-const Wrap = styled.div`
-
+const Wrape = styled.div`
+margin:20px;
 *{
+    
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 nav{
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  margin-top:2.8%;
+    position:fixed;
+   z-index: 99;
+   width: 100%;
+   margin-top:5%;
   
-  background: #f7f8f7;
+  
 }
 nav .wrapper{
-  position: relative;
+  position: fixed;
   max-width: 1300px;
-  padding: 0px 30px;
-  height: 70px;
+  padding: 0 30px;
+  margin:auto;
+  height: 50px;
   line-height: 70px;
-  margin: auto;
+ 
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: #eaeaf4;
 
 }
 
-
+.wrapper .logo{
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right:400px;
+  
+}
 .wrapper .nav-links{
   display: inline-flex;
+  
 }
 .nav-links li{
   list-style: none;
+}
+li{
+    list-style:none;
 }
 .nav-links li a{
   color:black;
@@ -52,8 +70,9 @@ nav .wrapper{
   transition: all 0.3s ease;
 }
 .nav-links li a:hover{
-  background: white;
-  color:gray;
+  background:#2e3192;
+  color:white;
+
 }
 .nav-links .mobile-item{
   display: none;
@@ -287,6 +306,13 @@ textarea:focus, input:focus{
   font-size: 45px;
   font-weight: 600;
 }
+.mail_button{
+    color:#2e3192;
+    font-size:12px;
+    cursor:pointer;
+    margin-left:10px;
+}
+
 
 
 `
@@ -299,48 +325,21 @@ export const NavbarSecond = () => {
  
   return (
     <>
-    <Wrap>
-
+    <Wrape>
+ 
   <nav>
     <div class="wrapper">
-     <Link class="logo" to="/home"><img style={{ width: "110px" }} src="https://image.pitchbook.com/60E3UZ8tZwClLtS11gSFs5NuIvH1613653472766_200x200" alt="logo"  /></Link>
+    <li>  <Link class="desktop-item" to="/"><span class="logo">Blue Heaven Cosmetics Private</span></Link></li>
+
       {/* <input type="radio" name="slider" id="menu-btn"/> */}
       {/* <input type="radio" name="slider" id="close-btn"/> */}
       <ul class="nav-links">
-          
-          <li>  <Link class="desktop-item" to="/women">Women</Link> 
-          <label for="showMega" class="mobile-item"></label>
-          <div class="mega-box">
-            <div class="content">
-            
-              <div class="row">
-                <header>Verieties of Women Dresses</header>
-                <ul class="mega-links">
-                  <li><Link class="desktop-item" to="/tops">Tops</Link></li>
-                  <li><Link class="desktop-item" to="/bottoms">Bottoms</Link></li>
-                  <li><Link class="desktop-item" to="/indian-wear">Indian Wear</Link></li>
-                  <li><Link class="desktop-item" to="/accessories">Accessories</Link></li>
-                  <li><Link class="desktop-item" to="/winterwear">Winterwear</Link></li>
-                  {/* <li><Link class="desktop-item" to="/more">More</Link></li> */}
-
-                </ul>
-              </div>
-              <div class="row">
-              <img  src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Women-Bottoms-Desktop2-05Nov2019.jpg"  />
-              </div>
-              <div class="row">
-              <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Women-SportsWear-Desktop1-05Nov2019.jpg"/>
-              </div>
-              <div class="row">
-              <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Women-Winterwear-Desktop1-05Nov2019.jpg"/>
-              </div>
-            </div>
-          </div>            
-        </li>
+ 
+         
 
 
 
-        <li>  <Link class="desktop-item" to="/men">Men</Link> 
+        <li>  <Link class="desktop-item" to="/men">Home</Link> 
           <label for="showMega" class="mobile-item"></label>
           <div class="mega-box">
             <div class="content">
@@ -431,19 +430,17 @@ export const NavbarSecond = () => {
           </div>
         </li>
 
-            <div><input type="text" placeholder='What are you looking for?'/></div>
-            {/* <label ><SearchOutlinedIcon/></label> */}
+
  
-            <li><Link to="/signup">Sign Up</Link>  </li>
-            <li><Link to="/signin">Sign In</Link></li>
-            <label htmlFor=""><LocalMallRoundedIcon/></label>
-            <li><Link to="/basket">|  Basket  </Link></li>  
+            <li><Link to="/signup"></Link>  </li>
             
+            <li class="mail_button"><LocalPhoneOutlinedIcon/>9876543210</li>
+            <li class="mail_button"><InitialFocus/> </li>
       </ul>
       <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
     </div>
   </nav>
-    </Wrap>
+    </Wrape>
     </>
 )
   }
