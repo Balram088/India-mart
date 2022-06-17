@@ -2,11 +2,11 @@
 import React from 'react'
 import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
-import Marquee from "react-fast-marquee";
+
 import { Link } from 'react-router-dom';
 import proPic from  '../About/m.png';
 import  com from  '../About/c.png';
-import { Grid, GridItem } from '@chakra-ui/react'
+import { Grid } from '@chakra-ui/react'
 import { Homewrraper } from '../Home/Homewrraper';
 
 export const About = () => {

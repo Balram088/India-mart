@@ -20,7 +20,7 @@ export const NavbarTop= () => {
   <nav>
     <div class="wrapper">
     <div class="logo">
-    <Link  to="/home"><img src="https://image.pitchbook.com/60E3UZ8tZwClLtS11gSFs5NuIvH1613653472766_200x200" alt="logo"  /></Link>
+    <Link  to="/"><img src="https://image.pitchbook.com/60E3UZ8tZwClLtS11gSFs5NuIvH1613653472766_200x200" alt="logo"  /></Link>
     </div>
     
     <div>

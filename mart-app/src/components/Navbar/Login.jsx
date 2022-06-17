@@ -2,7 +2,6 @@ import { FormControl, FormLabel, Input, ModalBody, ModalCloseButton, ModalConten
 import { Button, Modal } from "@chakra-ui/react";
 import React from "react";
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import styled from "styled-components";
 
 
 

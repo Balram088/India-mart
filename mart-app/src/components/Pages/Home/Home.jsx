@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 import { Link } from 'react-router-dom';
 import proPic from  '../About/m.png';
 import  com from  '../About/c.png';
-import { Grid, GridItem } from '@chakra-ui/react'
+import { Grid } from '@chakra-ui/react'
 import { Homewrraper } from './Homewrraper';
 
 const Home = () => {
