@@ -6,6 +6,7 @@ import Marquee from "react-fast-marquee";
 import { Link } from 'react-router-dom';
 import proPic from  './About/m.png';
 import { Grid, GridItem } from '@chakra-ui/react'
+import { TodoApp } from './Product/TodoApp';
 
 
 const Homewrraper = styled.div`
@@ -148,7 +149,7 @@ const Home = () => {
              </Grid>
   
             
-          
+          <TodoApp/>
          
      </div>  
    
