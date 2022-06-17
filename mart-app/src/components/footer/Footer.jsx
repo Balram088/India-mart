@@ -1,135 +1,90 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import style from "styled-components";
+import { Footerwrraper } from "./FooterWrraper";
 
- const Footerwrraper = style.div`
- .mega-box{
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 0 0px;
-  top: 85px;
-  opacity: 0;
  
-  margin-top:-20px;
-}
-.mega-box .content{
-  background: white;
-  padding: 25px 20px;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-}
-.mega-box .content .row{
-  width: calc(25% - 30px);
-  line-height: 45px;
-}
-
-.content .row header{
-  color: Blue;
-  margin-top:-15px;
-  font-size: 14px;
-  font-weight: 600;
-
-}
-.content .row .mega-links{
- border-left: 1px solid rgba(255,255,255,0.09);
-}
-.row .mega-links li{
-  padding: 0 20px;
-}
-.row .mega-links li a{
-   margin-top:-15px;
-  padding: 0 10px;
-  color: black;
-  font-size: 12px;
-  display: block;
-}
-.row .mega-links li a:hover{
-  color: blue;
-  background-color:white;
-  text-decoration: underline;
-}
-.wrapper .btn{
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
- 
-}
-.wrapper .btn.close-btn{
-  position: absolute;
-  right: 30px;
-  top: 10px;
-}
-
- `
 
 const Footer = () => {
   return (
     <>
     <Footerwrraper>
       <div>
+        <div class="footer_headig">
+           <div><h2>We are here to help you!</h2></div>
+           <div>
+            <div> Go Mobile:</div>
+             <div> 
+             <a href="https://itunes.apple.com/us/app/indiamart-buy-sell-products/id668561641?mt=8"><img src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-antivirus-software-policy-library-and-information-34.png" alt="" /></a>
+            </div>
+             <div>
+              <a href="https://play.google.com/store/apps/details?id=com.indiamart.m"><img src="https://static.cdnlogo.com/logos/a/36/android.svg" alt="" /></a>
+             </div>
+             <div>  <p>Follow us on</p> </div>
+             <div><a href="https://www.facebook.com/IndiaMART"><img src="https://www.freepnglogos.com/uploads/facebook-logo-png-3.png" alt="" /></a> </div>
+             <div> <a href="https://twitter.com/IndiaMART"><img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-simple-rounded-social-icon-png-logo-30.png" alt="" /></a></div>
+             <div><a href="https://www.linkedin.com/company/indiamart-intermesh-limited/"><img src="https://www.freepnglogos.com/uploads/linkedin-shiny-icon-logo-5.png" alt="" /></a> </div>
+           </div>
+        </div>
       <div class="mega-box">
             <div class="content">
             
               <div class="row">
-                <header>Makeup</header>
+                <header>About</header>
                 <ul class="mega-links">
-                  <li><Link class="desktop-item" to="/foundation">Foundation</Link></li>
-                  <li><Link class="desktop-item" to="/pan-cake">Pan Cake Beauty</Link></li>
-                  <li><Link class="desktop-item" to="/compact-powder">Compact Powder</Link></li>
-                  <li><Link class="desktop-item" to="pan-stick">Pan Stick Beauty </Link></li>
-                  <li><Link class="desktop-item" to="/more">More</Link></li>
+                  <li><Link class="desktop-item" to="/">Join Sales </Link></li>
+                  <li><Link class="desktop-item" to="/">Success Stories </Link></li>
+                  <li><Link class="desktop-item" to="/"> Press Section</Link></li>
+                  <li><Link class="desktop-item" to="/">Advertise with Us </Link></li>
+                  <li><Link class="desktop-item" to="/"> Investor Section</Link></li>
 
                 </ul>
               </div>
               <div class="row">
-                <header>For Eyes</header>
+                <header>Help</header>
                 <ul class="mega-links">
-                  <li><Link class="desktop-item" to="/mascra">Mascara</Link></li>
-                  <li><Link class="desktop-item" to="/eye-shadow">Eye Shadow</Link></li>
-                  <li><Link class="desktop-item" to="/eye-liner">Eye Liner</Link></li>
-                  <li><Link class="desktop-item" to="/eye-liner">Eye Cleaner</Link></li>
-                  <li><Link class="desktop-item" to="/more">More</Link></li>
+                  <li><Link class="desktop-item" to="/">About us </Link></li>
+                  <li><Link class="desktop-item" to="/"> Feedback</Link></li>
+                  <li><Link class="desktop-item" to="/">Complaints</Link></li>
+                  <li><Link class="desktop-item" to="/">Customer Care </Link></li>
+                  <li><Link class="desktop-item" to="/"> Jobs & Careers</Link></li>
 
                 </ul>
               </div>
               <div class="row">
-                <header>Traditional Items</header>
+                <header>Suppliers Tool Kit</header>
                 <ul class="mega-links">
-                  <li><Link class="desktop-item" to="/sindoor">Sindoor</Link></li>
-                  <li><Link class="desktop-item" to="/kajal">Kajal Eye Cosmetic</Link></li>
-                   <li><Link class="desktop-item" to="/kajal">Kajal </Link></li>
-                   <li><Link class="desktop-item" to="/sindoor">Sindoor</Link></li>
-                  <li><Link class="desktop-item" to="/more">More</Link></li>
+                  <li><Link class="desktop-item" to="/">Latest BuyLead</Link></li>
+                  <li><Link class="desktop-item" to="/">Learning Centre</Link></li>
+                   <li><Link class="desktop-item" to="/"> Pay With IndiaMART</Link></li>
+                   <li><Link class="desktop-item" to="/">Learning Centre</Link></li>
+                  
 
                 </ul>
               </div>
               <div class="row">
-                <header>Lips</header>
+                <header>Buyers Tool Kit</header>
                 <ul class="mega-links">
-                  <li><Link class="desktop-item" to="/lipStick">Lip Stick</Link></li>
-                  <li><Link class="desktop-item" to="/lip-liner">Lip Liner</Link></li>
-                  <li><Link class="desktop-item" to="/lip-gloss">Lip Gloss</Link></li>
-                  <li><Link class="desktop-item" to="/lipStick">Lip Brush</Link></li>
-                  <li><Link class="desktop-item" to="/more">More</Link></li>
+                  <li><Link class="desktop-item" to="/">Post Your Requirement</Link></li>
+                  <li><Link class="desktop-item" to="/">Search Products & Suppliers</Link></li>
+                  <li><Link class="desktop-item" to="/">Pay With IndiaMART</Link></li>
+                  <li><Link class="desktop-item" to="/">stay With IndiaMART</Link></li>
 
                 </ul>
               </div>
               <div class="row">
-                <header>LipCare</header>
+                <header>Events</header>
                 <ul class="mega-links">
-                  <li><Link class="desktop-item" to="/lip-balm">Lip Balm</Link></li>
-                  <li><Link class="desktop-item" to="/lip-gaurd">Lip Gaurd</Link></li>
-                  <li><Link class="desktop-item" to="/lip-liner">Lip Liner</Link></li>
-                  <li><Link class="desktop-item" to="/lip-gloss">Lip Gloss</Link></li>
-                  <li><Link class="desktop-item" to="/more">More</Link></li>
+                  <li><Link class="desktop-item" to="/">Trade Shows</Link></li>
+                  <li><Link class="desktop-item" to="/">Conferences</Link></li>
+                  <li><Link class="desktop-item" to="/">Events by Country</Link></li>
+                  <li><Link class="desktop-item" to="/">Invester meet</Link></li>
+                  <li><Link class="desktop-item" to="/">World Event</Link></li>
 
                 </ul>
               </div>
             </div>
           
+             <p class="l_m">Copyright © 1996-2022 IndiaMART InterMESH Ltd(clone) By Balram Patidar. All rights reserved.</p>
           </div>
           </div>
     </Footerwrraper>

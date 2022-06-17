@@ -1,18 +1,18 @@
 import {
 
     
-    GET_TODOS_ERROR,
-    GET_TODOS_LOADING,
-    GET_TODOS_SUCCESS,
+    GET_PRODUCTS_ERROR,
+    GET_PRODUCTS_LOADING,
+    GET_PRODUCTS_SUCCESS,
     
 
-} from './todo.types';
+} from './product.types';
 
 
 const initalState = {
   
 
-  getTodos:{
+  getProducts:{
     loading : false,
     error: false,
     data:[],
@@ -21,34 +21,34 @@ const initalState = {
 };
 
 
-export const todoReducer = (state = initalState, {type , payload}) => {
+export const ProductReducer = (state = initalState, {type , payload}) => {
     switch (type) {
-        case GET_TODOS_LOADING:{
+        case GET_PRODUCTS_LOADING:{
             return {
                 ...state,
-                getTodos:{
-                    ...state.addTodo,
+                getProducts:{
+                    ...state.addProduct,
                     loading: true,
                 },
              };
         }
-        case GET_TODOS_SUCCESS: {
+        case GET_PRODUCTS_SUCCESS: {
             return {
                 ...state,
-               getTodos: {
-                   ...state.getTodos,
+               getProducts: {
+                   ...state.getProducts,
                  loading:false,
                 data:payload,
                }
             }
         }
         
-        case GET_TODOS_ERROR:{
+        case GET_PRODUCTS_ERROR:{
             return {
                 ...state,
-              getTodos: 
+              getProducts: 
               {
-                  ...state.getTodos,
+                  ...state.getProducts,
                   loading:false,
                 error:true,
             }

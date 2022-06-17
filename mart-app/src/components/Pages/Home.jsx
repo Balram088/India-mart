@@ -5,8 +5,9 @@ import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 import Marquee from "react-fast-marquee";
 import { Link } from 'react-router-dom';
 import proPic from  './About/m.png';
+import  com from  './About/c.png';
 import { Grid, GridItem } from '@chakra-ui/react'
-import { TodoApp } from './Product/TodoApp';
+
 
 
 const Homewrraper = styled.div`
@@ -149,11 +150,14 @@ const Home = () => {
              </Grid>
   
             
-          <TodoApp/>
+         
          
      </div>  
    
-
+        
+     <div>
+              <a href="https://my.indiamart.com/?back=1"> <img src={com} alt="" /></a>  
+             </div>
          </div>
         </Homewrraper>
     </>
