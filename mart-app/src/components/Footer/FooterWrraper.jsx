@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components"
 
 export const Footerwrraper = styled.div`
+margin:100px;
 .footer_headig{
   display:flex;
   justify-content: space-around;

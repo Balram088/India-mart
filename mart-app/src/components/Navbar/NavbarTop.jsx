@@ -5,7 +5,7 @@ import { Wrap } from './Wrap';
 import  LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
 import DeviceThermostatOutlinedIcon from '@mui/icons-material/DeviceThermostatOutlined';
 import StoreMallDirectoryOutlinedIcon from '@mui/icons-material/StoreMallDirectoryOutlined';
-
+import Login from './Login';
 
 
 
@@ -64,7 +64,7 @@ export const NavbarTop= () => {
          
          </li>
              
-        <li>  <Link class="desktop-item" to="/login">Login</Link></li>
+        <li>  <Link class="desktop-item" to="/product">Login <Login/> </Link></li>
        
           
             

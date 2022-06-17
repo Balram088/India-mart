@@ -9,6 +9,7 @@ import styled from "styled-components";
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  
 
 }
 nav{
@@ -16,7 +17,7 @@ nav{
    z-index: 99;
    width: 100%;
    margin-top:5%;
-   margin-bottom:50px;
+  
    
 
   

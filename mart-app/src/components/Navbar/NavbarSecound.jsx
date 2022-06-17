@@ -21,8 +21,8 @@ export const NavbarSecond = () => {
       {/* <input type="radio" name="slider" id="menu-btn"/> */}
       {/* <input type="radio" name="slider" id="close-btn"/> */}
       <ul class="nav-links">
-      <li>  <Link class="desktop-item" to="/men">Home</Link></li>
-      <li>  <Link class="desktop-item" to="/girls">Products & services</Link> 
+      <li>  <Link class="desktop-item" to="/">Home</Link></li>
+      <li>  <Link class="desktop-item" to="/product">Products & services</Link> 
           <label for="showMega" class="mobile-item"></label>
           <div class="mega-box">
             <div class="content">
@@ -86,8 +86,8 @@ export const NavbarSecond = () => {
           </div>
         </li>
 
-        <li>  <Link class="desktop-item" to="/about-us">About Us</Link> </li>
-        <li>  <Link class="desktop-item" to="/contact-us">Contact Us</Link> </li>
+        <li>  <Link class="desktop-item" to="/about">About Us</Link> </li>
+        <li>  <Link class="desktop-item" to="/contact">Contact Us</Link> </li>
  
             <li class="mail_button"><LocalPhoneOutlinedIcon/>9876543210</li>
             <li class="mail_button"><InitialFocus/> </li>

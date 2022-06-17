@@ -1,88 +1,22 @@
 import React from 'react'
-import styled from "styled-components";
 import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 import Marquee from "react-fast-marquee";
 import { Link } from 'react-router-dom';
-import proPic from  './About/m.png';
-import  com from  './About/c.png';
+import proPic from  '../About/m.png';
+import  com from  '../About/c.png';
 import { Grid, GridItem } from '@chakra-ui/react'
+import { Homewrraper } from './Homewrraper';
 
-
-
-const Homewrraper = styled.div`
-.main{
-    margin:100px;
-}
-.main h1{
-   font-weight:700;
-   font-size:28px;
-   font-family: arial;
-   letter-spacing: -.2px;
-   line-height: 1.11;
-}
-.heading p{
-    color:grey;
-    font-size:12px;
-}
-.pro_imgs{
-    display:flex;
-    height:220px;
-    width:220px;
-    border-right:solid 1px #eaeaea;
-    cursor:pointer;
-}
-.pro_name{
-    color:white;
-    width:220px;
-    height:60px;
-    padding:10px;
-    background-color:#505050 ;
-    text-align:center;
-    font-weight:600;
-    border-right:solid 1px #eaeaea;
-    font-size:22px;
-    cursor:pointer;
-}
-.pro_name:hover{
-    background-color:white;
-    color:#2e3192;
-}
-.about h1{
-    text-align:center;
-    margin-top:40px;
-  
-}
-.about hr{
-    height:3px;
-    width:35px;
-    color:black;
-    margin-left:560px;
-}
-.about p{
-    margin:10px 110px 10px 110px ;
-    text-align:center;
-}
-.about div img{
-    height:250px;
-    width:100%;
-}
-.pro_box{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-.pro_box:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-`
 const Home = () => {
   return (
     <>
         <Homewrraper>
+            <div>
          <div class="main">
             <div class="heading">
-         <h1>Blue Heaven Cosmetics Private Limited </h1>
-         <p > <FmdGoodOutlinedIcon/> New Delhi  |  <CheckCircleRoundedIcon/> GST
+         <h6>. </h6>
+         <p ><span>Blue Heaven Cosmetics Private Limited</span> <br /> <FmdGoodOutlinedIcon/> New Delhi  |  <CheckCircleRoundedIcon/> GST
         07AACCB1155C1ZB</p>
         </div>
         <br/>
@@ -141,23 +75,19 @@ const Home = () => {
             <div>
                 <img src={proPic} alt="" />
              </div>
+             <div>
+              <a href="https://my.indiamart.com/?back=1"> <img src={com} alt="" /></a>  
+             </div>
              <Grid templateColumns='repeat(3, 1fr)' gap={6}>
                  <div> <img src="https://4.imimg.com/data4/CE/VE/GLADMIN-184994/forever-aloe-vera-gel-250x250.jpg" alt="" /> </div>
                  <div> <img src="https://4.imimg.com/data4/CE/VE/GLADMIN-184994/forever-aloe-vera-gel-250x250.jpg" alt="" /> </div>
                  <div> <img src="https://4.imimg.com/data4/CE/VE/GLADMIN-184994/forever-aloe-vera-gel-250x250.jpg" alt="" /> </div>
-               
-        
              </Grid>
-  
-            
-         
-         
-     </div>  
+             </div>  
    
         
-     <div>
-              <a href="https://my.indiamart.com/?back=1"> <img src={com} alt="" /></a>  
-             </div>
+     
+         </div>
          </div>
         </Homewrraper>
     </>
