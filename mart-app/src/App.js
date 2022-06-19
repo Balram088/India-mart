@@ -5,7 +5,7 @@ import Mainroutes from './components/Mainroutes';
 
 function App() {
   return (
-    <div>
+    <div className="main">
         
          <Mainroutes/>
         
