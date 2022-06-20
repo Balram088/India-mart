@@ -108,6 +108,7 @@ export const Wrap = styled.div`
     color: Black;
     font-size: 16px;
     font-weight: 600;
+    margin-left:25px;
   }
   .content .row .mega-links {
     margin-left: -40px;

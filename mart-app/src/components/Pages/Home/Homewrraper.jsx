@@ -2,7 +2,7 @@
 import styled from "styled-components";
 export const Homewrraper = styled.div`
 .main{
-    margin:0px 60px 100px 60px;
+   
 }
 .main div span{
   

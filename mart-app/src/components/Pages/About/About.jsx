@@ -37,12 +37,12 @@ export const About = () => {
               </p>
 
               <div>
-                <img src={proPic} alt="" />
+                <img class="featers_image" src={proPic} alt="" />
               </div>
               <div>
                 <a href="https://my.indiamart.com/?back=1">
                   {" "}
-                  <img src={com} alt="" />
+                  <img class="featers_image" src={com} alt="" />
                 </a>
               </div>
               <Grid templateColumns="repeat(3, 1fr)" gap={6}>

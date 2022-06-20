@@ -111,7 +111,7 @@ const Home = () => {
               </p>
 
               <div>
-                <img cladd="featers_image" src={proPic} alt="" />
+                <img class="featers_image" src={proPic} alt="" />
               </div>
               <div>
                 <a href="https://my.indiamart.com/?back=1">
