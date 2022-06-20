@@ -6,7 +6,7 @@ import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 
 const Pt = styled.button`
 
-margin:130px;
+margin:10% 0% 10% 10%;
 .heading{
   
   font-weight:700;
@@ -22,7 +22,7 @@ margin:130px;
 }
 .pro_imges img{
   width:300px;
-  height:300px;
+  height:350px;
 box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
   margin-bottom:2px;
@@ -62,7 +62,7 @@ export const Products = () => {
       
                 
         
-       <Grid templateColumns='repeat(4, 1fr)' gap={9}>
+       <Grid templateColumns='repeat(3, 1fr)' gap={9}>
        <div class="pro_imges"> <img   src="https://3.imimg.com/data3/MW/GA/MY-3904945/lipstick-250x250.jpg"                   alt="Natural" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div> 
        <div class="pro_imges"> <img   src="https://3.imimg.com/data3/QD/KT/MY-3904945/lip-balm-250x250.jpg"                   alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div>
        <div class="pro_imges"> <img   src="https://3.imimg.com/data3/TD/OG/MY-3904945/rose-water-250x250.jpg"                 alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div>
