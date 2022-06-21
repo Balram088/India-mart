@@ -1,8 +1,10 @@
 import { Grid } from '@chakra-ui/react';
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
+import {useDispatch, useSelector} from "react-redux"
+import axios from "axios";
 
 const Pt = styled.button`
 
@@ -51,7 +53,16 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
 }
 `
 
+
 export const Products = () => {
+   const dispatch = useDispatch();
+  const products = useSelector((state) => state.product.products);
+
+  useEffect(() => {
+     axios.get("http://localhost:8080/makeup").then((r) => {
+       console.log(r.data);
+  });
+  }, []);
   return (
     <div>  
         <Pt>
@@ -63,33 +74,19 @@ export const Products = () => {
                 
         
        <Grid templateColumns='repeat(3, 1fr)' gap={9}>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/MW/GA/MY-3904945/lipstick-250x250.jpg"                   alt="Natural" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div> 
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/QD/KT/MY-3904945/lip-balm-250x250.jpg"                   alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/TD/OG/MY-3904945/rose-water-250x250.jpg"                 alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/QF/CO/MY-3904945/mascara-250x250.jpg"                    alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/TP/WM/MY-3904945/sindoor-250x250.jpg"                    alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/MV/NT/MY-3904945/mix-fruit-scrub-250x250.jpg"            alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/TD/OG/MY-3904945/rose-water-250x250.jpg"                 alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/IR/ID/MY-3904945/massage-cream-250x250.jpg"              alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div>
-       <div class="pro_imges"> <img   src="https://4.imimg.com/data4/CE/VE/GLADMIN-184994/forever-aloe-vera-gel-250x250.jpg"  alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/MW/GA/MY-3904945/lipstick-250x250.jpg"                   alt="Natural" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/QD/KT/MY-3904945/lip-balm-250x250.jpg"                   alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/TD/OG/MY-3904945/rose-water-250x250.jpg"                 alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/QF/CO/MY-3904945/mascara-250x250.jpg"                    alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/TP/WM/MY-3904945/sindoor-250x250.jpg"                    alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button> </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/MV/NT/MY-3904945/mix-fruit-scrub-250x250.jpg"            alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button>  </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/TD/OG/MY-3904945/rose-water-250x250.jpg"                 alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button>  </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/IR/ID/MY-3904945/massage-cream-250x250.jpg"              alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button>  </div>
-       <div class="pro_imges"> <img   src="https://4.imimg.com/data4/CE/VE/GLADMIN-184994/forever-aloe-vera-gel-250x250.jpg"  alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button>  </div>    
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/MW/GA/MY-3904945/lipstick-250x250.jpg"                   alt="Natural" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button>  </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/QD/KT/MY-3904945/lip-balm-250x250.jpg"                   alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button>  </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/TD/OG/MY-3904945/rose-water-250x250.jpg"                 alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button>  </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/QF/CO/MY-3904945/mascara-250x250.jpg"                    alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button>  </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/TP/WM/MY-3904945/sindoor-250x250.jpg"                    alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button>  </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/MV/NT/MY-3904945/mix-fruit-scrub-250x250.jpg"            alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button>  </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/TD/OG/MY-3904945/rose-water-250x250.jpg"                 alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button>  </div>
-       <div class="pro_imges"> <img   src="https://3.imimg.com/data3/IR/ID/MY-3904945/massage-cream-250x250.jpg"              alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button>  </div>
-       <div class="pro_imges"> <img   src="https://4.imimg.com/data4/CE/VE/GLADMIN-184994/forever-aloe-vera-gel-250x250.jpg"  alt="pro_img" /> <p>Foundation</p>  <p>Price  <del> 1999₹  </del>  999₹ </p> <button>Add to Cart</button>  </div>
+  
+       <div class="pro_imges"> <img   src="https://4.imimg.com/data4/CE/VE/GLADMIN-184994/forever-aloe-vera-gel-250x250.jpg"
+         alt="pro_img" /> 
+         <p>Foundation</p> 
+          <p>Price  <del> 1999₹  </del>  999₹ </p>
+           <button>Add to Cart</button> 
+            </div>
+            
+            <div>
+                {products.map((product) => {
+                 <div  key={product.id} > {product.img} </div>
+                } )}
+            </div>
        </Grid>
        </div>
        
