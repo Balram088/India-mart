@@ -96,7 +96,7 @@ export const NavbarTop = () => {
               <li>
                 {" "}
                 <Link class="desktop-item" to="/product">
-                  Login <Login />{" "}
+                  Login <Login />
                 </Link>
               </li>
             </ul>
